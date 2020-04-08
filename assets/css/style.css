@@ -3,6 +3,31 @@ img {
     width: 90px;
 }
 
+
+.cardgrid {
+    align-content: center;
+    padding: 0 4vw 0 4vw;
+    width: 50vw;
+    min-height: 500px;
+    border: 2px solid black;
+}
+
+
 .cards {
-    padding: 10px;
+    display: flex;
+    width: 120px;
+    height: 130px;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.faceup,
+.facedown {
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
 }
