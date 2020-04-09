@@ -1,28 +1,28 @@
 body {
     height: 100vh;
+    background-image: url(../images/StarWarsVadarCT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 .game {
     align-content: center;
-    padding: 0 4vw 0 4vw;
-    width: 50vw;
-    min-height: 500px;
-    width: 640ox;
-    height: 640px;
+    width: 50%;
     perspective: 1000px;
 }
 
 
 .card {
-    display: flex;
-    height: 130px;
+    height: 140px;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
     border: none;
     transform-style: preserve-3d;
     transition: 1s;
+    background-color: transparent;
 }
 
 
