@@ -1,25 +1,33 @@
-img {
-    height: 120px;
-    width: 90px;
+body {
+    height: 100vh;
 }
 
 
-.cardgrid {
+.game {
     align-content: center;
     padding: 0 4vw 0 4vw;
     width: 50vw;
     min-height: 500px;
-    border: 2px solid black;
+    width: 640ox;
+    height: 640px;
+    perspective: 1000px;
 }
 
 
-.cards {
+.card {
     display: flex;
-    width: 120px;
     height: 130px;
-    margin: 2px auto;
     justify-content: center;
     align-items: center;
+    margin: 10px auto;
+    border: none;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+
+.card.flip {
+    transform: rotateY(180deg);
 }
 
 
@@ -28,6 +36,11 @@ img {
 .facedown {
     height: 100%;
     position: absolute;
-    backface-visibility: hidden;
     border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+
+.faceup {
+    transform: rotateY(180deg);
 }
