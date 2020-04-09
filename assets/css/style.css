@@ -6,6 +6,36 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none;
+    color: yellow;
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: none;
+    color: yellow;
+    font-style: italic;
+}
+
+
+h1 {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.levels {
+    display: flex;
+    justify-content: center;
+}
 
 .game {
     align-content: center;
