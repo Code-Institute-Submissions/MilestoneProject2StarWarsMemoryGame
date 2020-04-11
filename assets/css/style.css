@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
 }
 
+
 a {
     text-decoration: none;
     color: yellow;
@@ -26,6 +27,12 @@ h1 {
 }
 
 h2 {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+}
+
+h6 {
     color: yellow;
     font-style: italic;
     text-align: center;
@@ -73,4 +80,54 @@ h2 {
 
 .faceup {
     transform: rotateY(180deg);
+}
+
+
+
+/*gamebar*/
+
+.gamestats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    }
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+
+.attemptsbox,
+.timebox, .homebox, .restartbox  {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 2px auto;
+}
+
+.numberattempts,
+.timer, .home, .restart {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    border-radius: 10px;
+     border-color:grey;
+}
+
+
+.btn:hover {
+    color: yellow;
+    border-color:grey;
 }
