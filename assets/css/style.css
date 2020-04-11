@@ -123,9 +123,14 @@ h6 {
     align-items: center;
     color: yellow;
     border-radius: 10px;
-     border-color:grey;
+    border-color:grey;
 }
 
+
+.btn-dark {
+    margin: 5px;
+    border-color:grey;
+}
 
 .btn:hover {
     color: yellow;
