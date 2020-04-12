@@ -127,6 +127,17 @@ h6 {
 }
 
 
+.numberattempts {
+    border: 1px dashed grey;
+    background-color:#343a40;
+    
+}
+
+
+.numberattempts::before {
+    content:  "Attempts:\00a0";
+}
+
 .btn-dark {
     margin: 5px;
     border-color:grey;

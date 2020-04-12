@@ -1,8 +1,7 @@
-
 /* GameFundamentalCode*/
 
 const cards = document.querySelectorAll('.card');
-
+let numberAttempts = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -24,7 +23,16 @@ function flipCard() {
   // second click
   secondCard = this;
 
+    numberAttempts++;
+    attempts();
+
+
   checkForMatch();
+}
+
+
+function attempts() {
+    $('.numberattempts').html(numberAttempts);
 }
 
 function checkForMatch() {
@@ -58,12 +66,9 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
+    let randomPos = Math.floor(Math.random() * 20);
     card.style.order = randomPos;
   });
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
-
-

@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"  rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <title>Star Wars Memory Game</title>
 </head>
@@ -14,17 +15,14 @@
 
   <div class="gamestats">
             <div class="stats">
-                <div class="attemptsbox">
-                    <div class="numberattempts">0</div>
+                  <div class="homebox">
+               <div class="home btn btn-dark" type="button" onclick="location.href = 'index.html'"><i class="fas fa-home"></i></div>
                 </div>
-                <div class="homebox">
-                    <div class="home btn btn-dark"><i class="fas fa-home"></i></div>
+                <div class="attemptsbox">
+                 <div id="numberattempts" class="numberattempts">0</div>
                 </div>
                 <div class="restartbox">
                     <div class="home btn btn-dark"><i class="fas fa-redo"></i></div>
-                </div>
-                <div class="timebox">
-                    <div class="timer">00:00:00</div>
                 </div>
             </div>
 </div>
