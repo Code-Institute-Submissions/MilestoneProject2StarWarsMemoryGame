@@ -6,6 +6,8 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -71,4 +73,14 @@ function resetBoard() {
   });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+
+function restart() {
+    cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 25);
+    card.style.order = randomPos;
+    card.classList.remove('flip'); 
+    numberAttempts = 0;
+    $('.numberattempts').html(numberAttempts);
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    })
+}
