@@ -5,6 +5,7 @@ let numberAttempts = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+var shufflenumber = cards.length;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -46,7 +47,9 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  firstCard.classList.add('match');
+  secondCard.classList.add('match');
+  win();
   resetBoard();
 }
 
@@ -76,11 +79,20 @@ function resetBoard() {
 
 function restart() {
     cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 25);
+    let randomPos = Math.floor(Math.random() * shufflenumber );
     card.style.order = randomPos;
     card.classList.remove('flip'); 
     numberAttempts = 0;
     $('.numberattempts').html(numberAttempts);
     cards.forEach(card => card.addEventListener('click', flipCard));
     })
+}
+
+
+function win () {
+    matches = document.getElementsByClassName('match');
+    numbersmatched = matches.length;
+    if (numbersmatched == shufflenumber) {
+        console.log("winner winner"); 
+}
 }
