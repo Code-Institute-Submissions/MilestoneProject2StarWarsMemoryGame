@@ -71,7 +71,7 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 20);
+    let randomPos = Math.floor(Math.random() * shufflenumber);
     card.style.order = randomPos;
   });
 })();
@@ -81,10 +81,12 @@ function restart() {
     cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * shufflenumber );
     card.style.order = randomPos;
-    card.classList.remove('flip'); 
+    card.classList.remove('flip', 'match'); 
     numberAttempts = 0;
     $('.numberattempts').html(numberAttempts);
     cards.forEach(card => card.addEventListener('click', flipCard));
+     $('.game').show();
+     rehide ();
     })
 }
 
@@ -93,6 +95,19 @@ function win () {
     matches = document.getElementsByClassName('match');
     numbersmatched = matches.length;
     if (numbersmatched == shufflenumber) {
-        console.log("winner winner"); 
+    $('.game').hide();
+    reveal();
 }
+}
+
+function reveal(){
+$(document).ready(function() {
+    $("#hide").removeClass("hidediv");
+});
+}
+
+function rehide () {
+  $(document).ready(function() {
+    $("#hide").addClass("hidediv");
+});  
 }

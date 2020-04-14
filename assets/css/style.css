@@ -6,6 +6,10 @@ body {
     background-attachment: fixed;
 }
 
+.hidediv {
+    display: none;
+}
+
 
 a {
     text-decoration: none;
