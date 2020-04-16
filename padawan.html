@@ -18,7 +18,7 @@
                 <div class="homebox">
                <div class="home btn btn-dark" type="button" onclick="location.href = 'index.html'"><i class="fas fa-home"></i></div>
                 </div>
-                <div class="attemptsbox btn-dark">
+                <div class="attemptsbox">
                  <div class="numberattempts">0</div>
                 </div>
                 <div class="restartbox">
@@ -27,8 +27,8 @@
             </div>
 </div>
 
-
-        <div class="row col-md-10 col-xl-8 mx-auto game">
+<div class="container">
+        <div class="row col-md-12 col-xl-12 mx-auto game">
             <div class="card col-3 col-md-3 col-xl-3" data-name="Yoda">
                 <img class="faceup" src="assets/images/Yoda.jpg">
                 <img class="facedown" src="assets/images/starwarscard.jpg">
@@ -64,11 +64,25 @@
                 <img class="faceup" src="assets/images/Yoda.jpg">
                 <img class="facedown" src="assets/images/starwarscard.jpg">
             </div>
-
         </div>
-    <div id="hide" class="hidediv">
-    <h2>winner</h2>
     </div>
+
+
+
+    <div id="win" class="winner">
+    <h6>The Force is Strong in you Jedi</h6>
+    <div class="winimage">
+    </div>
+    </div>
+
+
+
+    <div id="lose" class="loser">
+    <h6>You Lose</h6>
+    <div class="failimage">
+    </div>
+    </div>
+    
 
     
     <script src="assets/js/game.js"></script>

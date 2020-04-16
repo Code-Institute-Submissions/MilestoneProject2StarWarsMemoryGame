@@ -15,14 +15,14 @@
 
   <div class="gamestats">
             <div class="stats">
-                  <div class="homebox">
+                <div class="homebox">
                <div class="home btn btn-dark" type="button" onclick="location.href = 'index.html'"><i class="fas fa-home"></i></div>
                 </div>
                 <div class="attemptsbox">
-                 <div id="numberattempts" class="numberattempts">0</div>
+                 <div class="numberattempts">0</div>
                 </div>
                 <div class="restartbox">
-                    <div class="home btn btn-dark" type="button" onclick="restart();"><i class="fas fa-redo"></i></div>
+                    <div class="restart btn btn-dark" type="button" onclick="restart();"><i class="fas fa-redo"></i></div>
                 </div>
             </div>
 </div>
@@ -94,6 +94,22 @@
             </div>
     </div>
 </div>
+
+  <div id="win" class="winner">
+    <h2>The Force is Strong in you Jedi</h2>
+    <div class="winimage">
+    </div>
+    </div>
+
+
+
+    <div id="lose" class="loser">
+    <h2>You Lose</h2>
+    <div class="failimage">
+    </div>
+    </div>
+    
+
     <script src="assets/js/game.js"></script>
 </body>
 </html>

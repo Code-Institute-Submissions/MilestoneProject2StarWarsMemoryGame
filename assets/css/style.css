@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: black;
     height: 100%;
 }
 
@@ -13,10 +14,26 @@ body {
     padding: 0px;
 }
 
-.hidediv {
+.winner, .loser {
     display: none;
 }
 
+.winimage {
+    content:url(../images/yodavspalpwin.gif);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.failimage {
+    content:url(../images/yodavspalplose.gif);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 a {
     text-decoration: none;
@@ -60,9 +77,6 @@ h6 {
     perspective: 1000px;
 }
 
-.row {
-    height: auto;
-}
 
 .card {
     height: 120px;

@@ -91,23 +91,38 @@ function restart() {
 }
 
 
-function win () {
+function win() {
     matches = document.getElementsByClassName('match');
     numbersmatched = matches.length;
     if (numbersmatched == shufflenumber) {
-    $('.game').hide();
-    reveal();
+    setTimeout(function(){
+        $('.game').hide();}, 1200);
+        setTimeout(function(){
+           reveal();}, 1500);
 }
 }
 
 function reveal(){
 $(document).ready(function() {
-    $("#hide").removeClass("hidediv");
+
+ if (numberAttempts <= (shufflenumber/2)) { 
+        $('.winner').show() 
+        $("#win").removeClass("winner");
+       
+
+    } else { 
+            $('.loser').show() 
+              $("#lose").removeClass("loser");
+        }
+
 });
 }
 
 function rehide () {
   $(document).ready(function() {
-    $("#hide").addClass("hidediv");
+    $("#win").addClass("winner");
+    $('.winner').hide();
+    $("#lose").addClass("loser");
+    $('.loser').hide();
 });  
 }
