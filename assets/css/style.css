@@ -157,20 +157,12 @@ h6 {
         transform: scale(1.1);
     }
 
-   .faceup {
-        height: 120px;
+   .faceup .facedown {
+       transform: scale(1.1);
     }
 
-}
-
-
-@media (max-width: 800px) {
-    .card {
-        transform: scale(1);
-    }
-
-    .faceup {
-        height: 100px;
+    .card.flip {
+        transform: rotateY(180deg) scale(.8);
     }
 
 }
@@ -185,8 +177,12 @@ h6 {
         transform: scale(.8);
     }
 
-    .faceup {
-        height: 80px;
+    .faceup .facedown {
+        transform: scale (.8);
+    }
+
+    .card.flip {
+        transform: rotateY(180deg) scale(.8);
     }
 }
 
@@ -199,6 +195,14 @@ h6 {
     }
     .card {
         transform: scale(.7);
+    }
+
+     .faceup .facedown {
+         transform: scale(.7);
+     }
+
+    .card.flip {
+        transform: rotateY(180deg) scale(.7);
     }
 }
 
