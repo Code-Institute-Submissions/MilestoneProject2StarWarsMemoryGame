@@ -257,13 +257,9 @@ h6 {
 
 
 @media (max-width: 1000px) {
-      .lightsaber, .grip  {
-        transform: scale(.7)
-    }
-
-    .blade:hover {
-        height: 75vh;
-    }
+      .lightsaber, .grip, .blade, .blade:hover {
+          display: none;
+      }
 
 }
 
