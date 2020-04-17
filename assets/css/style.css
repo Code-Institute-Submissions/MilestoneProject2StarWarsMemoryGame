@@ -205,6 +205,40 @@ h6 {
 }
 
 
+/*Lightsaber*/
+
+
+.grip {
+    position: absolute;
+    margin-left: 30vw;
+    margin-top:  55vh;
+	width: 45px;
+	height: 160px;
+    border-radius: 5px;
+	border-top: solid 20px grey;
+    border-bottom: solid 30px grey;
+	background: repeating-linear-gradient( -180deg, #222, #222 10px,#333 10px,grey 20px );
+    
+}
+
+.blade {
+    transition: height 300ms;
+	border-radius: 36px 36px 0 0;
+	position: absolute;
+    left: 8px;
+	bottom: 130px;
+	width: 30px;
+	display: block;
+	height: 0px;
+}
+
+.grip:hover .blade {
+    height: 70vh;
+    background: linear-gradient(to right, #7EC855, #b3f391, white, white,  #b3f391, #7EC855);
+    box-shadow: 0px 0px 30px 20px #7EC855;
+}
+
+
 @media (max-width: 1500px) {
 
     .card {
@@ -217,6 +251,18 @@ h6 {
 
     .card.flip {
         transform: rotateY(180deg) scale(1);
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+      .lightsaber, .grip  {
+        transform: scale(.7)
+    }
+
+    .blade:hover {
+        height: 75vh;
     }
 
 }
@@ -242,7 +288,6 @@ h6 {
       .winbox, .loserbox {
         margin: 5px;
     }
-
 
 }
 
