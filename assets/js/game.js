@@ -98,14 +98,14 @@ function win() {
     setTimeout(function(){
         $('.game').hide();}, 1200);
         setTimeout(function(){
-           reveal();}, 1500);
+           revealresult();}, 1500);
 }
 }
 
-function reveal(){
+function revealresult(){
 $(document).ready(function() {
 
- if (numberAttempts <= (shufflenumber/2)) { 
+ if (numberAttempts <= (shufflenumber/2)+(2)) { 
         $('.winner').show() 
         $("#win").removeClass("winner");
        
@@ -126,3 +126,4 @@ function rehide () {
     $('.loser').hide();
 });  
 }
+

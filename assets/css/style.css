@@ -14,7 +14,7 @@ body {
     padding: 0px;
 }
 
-.winbox, .losebox {
+.winbox, .loserbox {
     background-color:#16181a57;
     padding: 0px;
     margin-left: 30vw;
@@ -22,6 +22,7 @@ body {
     border: 2px solid grey;
     border-radius: 10px;
 }
+
 
 .winner, .loser {
     display: none;
@@ -237,6 +238,12 @@ h6 {
     .card.flip {
         transform: rotateY(180deg) scale(.8);
     }
+
+      .winbox, .loserbox {
+        margin: 5px;
+    }
+
+
 }
 
 @media (max-width: 360px) {
@@ -262,4 +269,9 @@ h6 {
     .card.flip {
         transform: rotateY(180deg) scale(.7);
     }
+
+    .winbox, .loserbox {
+        margin: 5px;
+    }
+
 }
