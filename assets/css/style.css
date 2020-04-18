@@ -281,7 +281,7 @@ a:hover {
     }
 
     .faceup .facedown {
-        transform: scale (.8);
+        transform: scale(.8);
     }
 
     .card.flip {
@@ -291,7 +291,6 @@ a:hover {
       .winbox, .loserbox {
         margin: 5px;
     }
-
 }
 
 @media (max-width: 360px) {
