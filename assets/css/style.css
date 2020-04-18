@@ -16,14 +16,12 @@ text-align: center;
 margin: 0;
 color: #FFE81F;
 font-size: 80px;
-padding-left: 20px;
 font-style: italic;
 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 h2 {
 color: #FFE81F;
-padding-left: 20px;
 font-style: italic;
 font-size: 40px;
 text-align: center;
@@ -45,6 +43,11 @@ a:hover {
     text-decoration: none;
     color: yellow;
     font-style: italic;
+}
+
+ul {
+    padding-left: 0px;
+    display: flex;
 }
 
 
