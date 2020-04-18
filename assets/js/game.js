@@ -9,6 +9,10 @@ var shufflenumber = cards.length;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+$(function() {
+    shuffle();
+});
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -104,7 +108,7 @@ function win() {
 }
 
 function revealresult(){
- if (numberAttempts <= (shufflenumber/2)+(2)) { 
+ if (numberAttempts <= (shufflenumber/2)+(4)) { 
         $('.winner').show() 
         $("#win").removeClass("winner");
        
