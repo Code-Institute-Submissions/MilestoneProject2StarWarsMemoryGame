@@ -1,6 +1,6 @@
 /* GameFundamentalCode*/
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card'); 
 let numberAttempts = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -69,12 +69,12 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * shufflenumber);
     card.style.order = randomPos;
   });
-})();
+}
 
 
 function restart() {
@@ -86,25 +86,24 @@ function restart() {
     $('.numberattempts').html(numberAttempts);
     cards.forEach(card => card.addEventListener('click', flipCard));
      $('.game').show();
-     rehide ();
+    card.classList.remove('flip', 'match'); 
+    rehide ();
     })
 }
 
 
 function win() {
-    matches = document.getElementsByClassName('match');
+    matches = $('.match');
     numbersmatched = matches.length;
     if (numbersmatched == shufflenumber) {
     setTimeout(function(){
-        $('.game').hide();}, 1200);
-        setTimeout(function(){
-           revealresult();}, 1500);
+    $('.game').hide();}, 1200);
+    setTimeout(function(){
+    revealresult();}, 1500);
 }
 }
 
 function revealresult(){
-$(document).ready(function() {
-
  if (numberAttempts <= (shufflenumber/2)+(2)) { 
         $('.winner').show() 
         $("#win").removeClass("winner");
@@ -114,16 +113,12 @@ $(document).ready(function() {
             $('.loser').show() 
               $("#lose").removeClass("loser");
         }
-
-});
 }
 
 function rehide () {
-  $(document).ready(function() {
     $("#win").addClass("winner");
     $('.winner').hide();
     $("#lose").addClass("loser");
     $('.loser').hide();
-});  
 }
 
