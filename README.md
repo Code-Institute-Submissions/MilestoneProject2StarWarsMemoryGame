@@ -75,10 +75,6 @@ In the future I would like to add the following features;
 * Add an "impossible" or chosen one level - this level would contain more cards and reshuffle any unflipped cards that were not previously matched. (for e.g. click one - yoda, click two - yoda = match, click three - Luke, click four - leia = unflip those two cards, keep yoda flipped but shuffle all other facedown cards) 
 * Add instructions for players on the games to allow them to see the goal they have to meet in order to win. (complete in under 6 attempts to win etc.)
 
-## Fonts
-
-* GoogleFonts.
-
 
 ## Pages
 
@@ -96,7 +92,7 @@ W3C validation for padawan.html | Failed on "type=button" not required. Removed 
 W3C validation for jediknight.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
 W3C validation for jedimaster.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
 W3C validation for CSS | Passed
-Chrome developer tools (debugging and responsiveness testing) | Passed
+Chrome developer tools (debugging and responsiveness testing -including all devices available) | Passed
 Samsung A50 | When using game on this type of mobile the bodys image didn't reach the entire end of the phone due to the screensize so I added a black background to the body to stop any whitespace. 
 Iphone 7 | Images weren't rendering correctly on this type of mobile after being flipped, after some investigation and debugging, I figured out the solution was to add -webkit-backface-visibility: hidden; to the faceup and facedown card elements. 
 Iphone X | Images weren't rendering correctly on this type of mobile after being flipped, after some investigation and debugging, I figured out the solution was to add -webkit-backface-visibility: hidden; to the faceup and facedown card elements.
@@ -149,12 +145,13 @@ Browser Test | Outcome
 * Git
 * GitHub
 * Balsamiq
+* Photoshop
 
 
 ## ViewProject
 
 * to do
 
-## Acknowledgements
-
-* I got the idea to create an interactive frontend memory game from [Code Institute](https://www.codeinstitute.net)
+## Disclaimer
+This project was created for educational purposes only.
+All images and content is used solely for the purpose of a milestone project from [Code Institute](https://www.codeinstitute.net) and is not intended to be distributed/sold or used by members of the general public. 
