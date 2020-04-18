@@ -1,3 +1,5 @@
+/*--------------------body css--------------------*/
+
 body {
     background-image: url(../images/StarWarsVadarCT.jpg);
     background-size: cover;
@@ -7,6 +9,7 @@ body {
     height: 100%;
 }
 
+/*--------------------Headers & Links css--------------------*/
 
 h1 {
 text-align: center;
@@ -32,62 +35,6 @@ h6 {
     text-align: center;
 }
 
-
-.container {
-    width: 100%;
-    height:100%;
-    min-height: 100%;
-    padding: 0px;
-}
-
-.winbox, .loserbox {
-    background-color:#16181a57;
-    padding: 0px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    border: 2px solid grey;
-    border-radius: 10px;
-}
-
-
-.winner, .loser {
-    display: none;
-}
-
-.winimage {
-    content:url(../images/yodavspalpwin.gif);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
-
-.failimage {
-    content:url(../images/yodavspalplose.gif);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
-.nextlevelbox {
-display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.nextlevel {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    color: yellow;
-    border-radius: 10px;
-    border-color:grey;
-}
-
 a {
     text-decoration: none;
     color: yellow;
@@ -101,10 +48,20 @@ a:hover {
 }
 
 
+/*--------------------Game Design css--------------------*/
+
 .levels {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    width: 100%;
+    height:100%;
+    min-height: 100%;
+    padding: 0px;
+}
+
 
 .game {
     align-content: center;
@@ -144,10 +101,6 @@ a:hover {
 .faceup {
     transform: rotateY(180deg);
 }
-
-
-
-/*gamebar*/
 
 .gamestats {
     display: flex;
@@ -212,7 +165,57 @@ a:hover {
 }
 
 
-/*Lightsaber*/
+/*Results Modal*/
+
+.winbox, .loserbox {
+    background-color:#16181a57;
+    padding: 0px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+
+.winner, .loser {
+    display: none;
+}
+
+.winimage {
+    content:url(../images/yodavspalpwin.gif);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+.failimage {
+    content:url(../images/yodavspalplose.gif);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.nextlevelbox {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nextlevel {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    border-radius: 10px;
+    border-color:grey;
+}
+
+/*--------------------Lightsaber--------------------*/
 
 
 .grip {
@@ -244,6 +247,10 @@ a:hover {
     background: linear-gradient(to right, #7EC855, #b3f391, white, white,  #b3f391, #7EC855);
     box-shadow: 0px 0px 30px 20px #7EC855;
 }
+
+
+/*--------------------media queries--------------------*/
+
 
 
 @media (max-width: 1500px) {
