@@ -1,6 +1,9 @@
 # *Star Wars Memory Game*
 ## MilestoneProject2 - Interactive Front End Development
 
+
+Game Demo [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/index.html)
+
 ## Table Of Contents
 1. [Description](#Description)
 2. [UX](#UX)
@@ -14,6 +17,7 @@
 10. [Technologies](#Technologies)
 11. [ViewProject](#ViewProject)
 12. [Acknowledgements](#Acknowledgements)
+13. [Disclaimer](#Disclaimer)
 
 ## Description
 
@@ -96,11 +100,12 @@ In the future I would like to add the following features;
 
 Test | Outcome
 ------------ | -------------
-W3C validation for index.html | Failed on list item being inside a div - had updated the divs to be list items to make my HTML more semantic and had forgotten to wrap in the list items in an unordered list tag - updated and Passed as a result.  
-W3C validation for padawan.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups. 
-W3C validation for jediknight.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
-W3C validation for jedimaster.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
-W3C validation for CSS | Passed
+W3C HTML validation for index.html | Failed on list item being inside a div - had updated the divs to be list items to make my HTML more semantic and had forgotten to wrap in the list items in an unordered list tag - updated and Passed as a result.  
+W3C HTML validation for padawan.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups. 
+W3C HTML validation for jediknight.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
+W3C HTML validation for jedimaster.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
+W3C CSS validation for All | Passed
+JSHint Javascript Test for game.js | Passed
 Chrome developer tools (debugging and responsiveness testing -including all devices available) | Passed
 Samsung A50 | When using game on this type of mobile the bodys image didn't reach the entire end of the phone due to the screensize so I added a black background to the body to stop any whitespace. 
 Iphone 7 | Images weren't rendering correctly on this type of mobile after being flipped, after some investigation and debugging, I figured out the solution was to add -webkit-backface-visibility: hidden; to the faceup and facedown card elements. 
@@ -181,12 +186,14 @@ The following are the other Technologies used throughout the build process:
 
 ## ViewProject
 
-* to do
+* The code used to develop this memory game can be viewed [here](https://github.com/Murphj99/MilestoneProject2StarWarsMemoryGame)
+* The live version of the Game deployed using [GitHubPages](https://pages.github.com/) can be viewed here [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/index.html)
 
 
 ## Acknowledgements
-I got the idea to create a Memory Card Game from [Code Institute](https://www.codeinstitute.net).
+* I got the idea to create a Memory Card Game from [Code Institute](https://www.codeinstitute.net).
+
 
 ## Disclaimer
-This project was created for educational purposes only.
-All images and content is used solely for the purpose of a milestone project from [Code Institute](https://www.codeinstitute.net) and is not intended to be distributed/sold or used by members of the general public. 
+* This project was created for educational purposes only.
+* All images and content is used solely for the purpose of a milestone project from [Code Institute](https://www.codeinstitute.net) and is not intended to be distributed/sold or used by members of the general public. 
