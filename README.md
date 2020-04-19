@@ -47,7 +47,7 @@ Players also have the ability to restart a game or navigate home from any level 
 
 ## Wireframes
 
-All wireframes for this website were created using Balsamiq Mock up tool.
+All wireframes the development of this memory game were created using Balsamiq Mock up tool.
 
 1. Main Desktop Screen [here](libraries/wireframes/mainpagedesktop.JPG)
 2. Main Mobile Screen [here](libraries/wireframes/mainpagemobile.JPG)
@@ -77,13 +77,12 @@ All wireframes for this website were created using Balsamiq Mock up tool.
 ## FutureFeatures
 
 In the future I would like to add the following features;
-* A Light/Dark Version of the Website - the background image and facedown card images would turn to a light version and Darth Vader image replaced with a "lightside" character (e.g yoda.)
 * The cards would not be static in the html and would be called from a central repository of images and randomly appear based on the number of cards per level. 
 * The gif clips on the results modals would also vary instead of being static to keep the results becoming predictable. 
 * Add sound effects - theme music, character quotes when matched and lightsaber sounds on click events.
 * Add an "impossible" or chosen one level - this level would contain more cards and reshuffle any unflipped cards that were not previously matched. (for e.g. click one - yoda, click two - yoda = match, click three - Luke, click four - leia = unflip those two cards, keep yoda flipped but shuffle all other facedown cards) 
 * Add instructions for players on the games to allow them to see the goal they have to meet in order to win. (complete in under 6 attempts to win etc.)
-
+* A Light/Dark Version of the game - the background image and facedown card images would turn to a light version and Darth Vader image replaced with a "lightside" character (e.g yoda.)
 
 
 ## Pages
@@ -141,7 +140,7 @@ Browser Test | Outcome
 
 
 ## Deployment
-[GitHub](https://github.com/) was used to develop the project, store code in repositories and maintain the version control of this project. 
+[GitHub](https://github.com/) was used to develop the project, store code in the repository and maintain the version control of this project. 
 The live demo has been deployed using [GitHubPages](https://pages.github.com/).
 
 The following steps were used to deploy the Star Wars Memory Game to GitHub Page:
@@ -161,6 +160,7 @@ The following are the other Technologies used throughout the build process:
 * [JQuery](https://jquery.com)
     - Used to simplify some elements of Javascript. 
 * [Bootstrap](https://www.bootstrapcdn.com/)
+    - Used for developing a more responsive and mobile first approached game. It was also used to apply some CSS throughout the project.
 * [FontAwesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css)
     - Used for useful icons to provide more intuitive UI.
 * [GitHub](https://github.com/)
