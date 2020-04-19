@@ -2,7 +2,7 @@
 ## MilestoneProject2 - Interactive Front End Development
 
 
-Game Demo [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/index.html)
+Game Demo [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/)
 
 ## Table Of Contents
 1. [Description](#Description)
@@ -149,14 +149,14 @@ Browser Test | Outcome
 The live demo has been deployed using [GitHubPages](https://pages.github.com/).
 
 The following steps were used to deploy the Star Wars Memory Game to GitHub Page:
-1. Log into GitHub
+1. Log into GitHub.
 2. Navigate to respositaries section and select **MilestoneProject2StarWarsMemoryGame**.
 3. On the top bar search for and click on **Settings** in the top right hand corner.
 4. Near the end of the page you will find the **Github Pages** section. 
 5. Click on the dropdown located in the source section and select **Master Branch** from the list. 
 6. The site has now been deployed on Github Pages.
 7. To obtain the live link to your deployed site navigate back through these steps to the **Github Pages** section and your link will be shown there.
-
+8. The link generated can be used in around 10 minutes. The link generated for this site as: [https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/).
 
 ## Technologies
 The project is built using HTML, CSS and Javascript as its main components.
@@ -187,7 +187,7 @@ The following are the other Technologies used throughout the build process:
 ## ViewProject
 
 * The code used to develop this memory game can be viewed [here](https://github.com/Murphj99/MilestoneProject2StarWarsMemoryGame)
-* The live version of the Game deployed using [GitHubPages](https://pages.github.com/) can be viewed here [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/index.html)
+* The live version of the Game deployed using [GitHubPages](https://pages.github.com/) can be viewed here [StarWarsMemoryGame](https://murphj99.github.io/MilestoneProject2StarWarsMemoryGame/)
 
 
 ## Acknowledgements
