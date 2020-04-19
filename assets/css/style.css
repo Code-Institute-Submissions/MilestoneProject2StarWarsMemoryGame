@@ -1,244 +1,238 @@
 /*--------------------body css--------------------*/
 
 body {
-    background-image: url(../images/StarWarsVadarCT.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: black;
-    height: 100%;
+	background-image: url(../images/StarWarsVadarCT.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
+	height: 100%;
 }
+
 
 /*--------------------Headers & Links css--------------------*/
 
-h1 { 
-text-align: center;
-margin: 0;
-color: #FFE81F;
-font-size: 80px;
-font-style: italic;
-text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+h1 {
+	text-align: center;
+	margin: 0;
+	color: #FFE81F;
+	font-size: 80px;
+	font-style: italic;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 h2 {
-color: #FFE81F;
-font-style: italic;
-font-size: 40px;
-text-align: center;
+	color: #FFE81F;
+	font-style: italic;
+	font-size: 40px;
+	text-align: center;
 }
 
 h6 {
-    color: yellow;
-    font-style: italic;
-    text-align: center;
+	color: yellow;
+	font-style: italic;
+	text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: yellow;
-    font-style: italic;
+	text-decoration: none;
+	color: yellow;
+	font-style: italic;
 }
 
 a:hover {
-    text-decoration: none;
-    color: yellow;
-    font-style: italic;
+	text-decoration: none;
+	color: yellow;
+	font-style: italic;
 }
 
 ul {
-    padding-left: 0px;
-    display: flex;
+	padding-left: 0px;
+	display: flex;
 }
 
 
 /*--------------------Game Design css--------------------*/
 
 .levels {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .container {
-    width: 100%;
-    height:100%;
-    min-height: 100%;
-    padding: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 0px;
 }
-
 
 .game {
-    align-content: center;
-    perspective: 1000px;
+	align-content: center;
+	perspective: 1000px;
 }
-
 
 .card {
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    margin: 2px auto;
-    border: none;
-    transform-style: preserve-3d;
-    transition: 1s;
-    background-color: transparent;
-    padding: 0px;
+	height: 120px;
+	justify-content: center;
+	align-items: center;
+	margin: 2px auto;
+	border: none;
+	transform-style: preserve-3d;
+	transition: 1s;
+	background-color: transparent;
+	padding: 0px;
 }
-
 
 .card.flip {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
-
-
 
 .faceup,
 .facedown {
-    height: 120px;
-    position: absolute;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+	height: 120px;
+	position: absolute;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
-
 .faceup {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .gamestats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: auto;
-    margin: auto;
-    }
-
-.stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 80px;
-    padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: auto;
+	margin: auto;
 }
 
+.stats {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 80px;
+	padding-top: 30px;
+}
 
 .attemptsbox,
-.timebox, .homebox, .restartbox  {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    border-radius: 10px;
-    margin: 2px auto;
+.timebox,
+.homebox,
+.restartbox {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	border-radius: 10px;
+	margin: 2px auto;
 }
 
 .numberattempts,
-.timer, .home, .restart {
-    display: flex;
-    width: 100px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    color: yellow;
-    border-radius: 10px;
-    border-color:grey;
+.timer,
+.home,
+.restart {
+	display: flex;
+	width: 100px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	color: yellow;
+	border-radius: 10px;
+	border-color: grey;
 }
-
 
 .numberattempts {
-    border: 1px dashed grey;
-    background-color:#343a40;
-    
+	border: 1px dashed grey;
+	background-color: #343a40;
 }
 
-
 .numberattempts::before {
-    content:  "Attempts:\00a0";
+	content: "Attempts:\00a0";
 }
 
 .btn-dark {
-    margin: 5px;
-    border-color:grey;
+	margin: 5px;
+	border-color: grey;
 }
 
 .btn:hover {
-    color: yellow;
-    border-color:grey;
+	color: yellow;
+	border-color: grey;
 }
 
 
 /*Results Modal*/
 
-.winbox, .loserbox {
-    background-color:#16181a57;
-    padding: 0px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    border: 2px solid grey;
-    border-radius: 10px;
+.winbox,
+.loserbox {
+	background-color: #16181a57;
+	padding: 0px;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	border: 2px solid grey;
+	border-radius: 10px;
 }
 
-
-.winner, .loser {
-    display: none;
+.winner,
+.loser {
+	display: none;
 }
 
 .winimage {
-    content:url(../images/yodavspalpwin.gif);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+	content: url(../images/yodavspalpwin.gif);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
 }
 
-
 .failimage {
-    content:url(../images/yodavspalplose.gif);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+	content: url(../images/yodavspalplose.gif);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
 }
 
 .nextlevelbox {
-display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .nextlevel {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    color: yellow;
-    border-radius: 10px;
-    border-color:grey;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	color: yellow;
+	border-radius: 10px;
+	border-color: grey;
 }
+
 
 /*--------------------Lightsaber--------------------*/
 
-
 .grip {
-    position: absolute;
-    margin-left: 30vw;
-    margin-top:  50vh;
+	position: absolute;
+	margin-left: 30vw;
+	margin-top: 50vh;
 	width: 45px;
 	height: 160px;
-    border-radius: 5px;
+	border-radius: 5px;
 	border-top: solid 20px grey;
-    border-bottom: solid 30px grey;
-	background: repeating-linear-gradient( -180deg, #222, #222 10px,#333 10px,grey 20px );
-    
+	border-bottom: solid 30px grey;
+	background: repeating-linear-gradient( -180deg, #222, #222 10px, #333 10px, grey 20px);
 }
 
 .blade {
-    transition: height 300ms;
+	transition: height 300ms;
 	border-radius: 36px 36px 0 0;
 	position: absolute;
-    left: 8px;
+	left: 8px;
 	bottom: 130px;
 	width: 30px;
 	display: block;
@@ -246,89 +240,77 @@ display: flex;
 }
 
 .grip:hover .blade {
-    height: 70vh;
-    background: linear-gradient(to right, #7EC855, #b3f391, white, white,  #b3f391, #7EC855);
-    box-shadow: 0px 0px 30px 20px #7EC855;
+	height: 70vh;
+	background: linear-gradient(to right, #7EC855, #b3f391, white, white, #b3f391, #7EC855);
+	box-shadow: 0px 0px 30px 20px #7EC855;
 }
 
 
 /*--------------------media queries--------------------*/
 
-
-
 @media (max-width: 1500px) {
-
-    .card {
-        transform: scale(1);
-    }
-
-   .faceup .facedown {
-       transform: scale(1);
-    }
-
-    .card.flip {
-        transform: rotateY(180deg) scale(1);
-    }
-
+	.card {
+		transform: scale(1);
+	}
+	.faceup .facedown {
+		transform: scale(1);
+	}
+	.card.flip {
+		transform: rotateY(180deg) scale(1);
+	}
 }
-
 
 @media (max-width: 1000px) {
-      .lightsaber, .grip, .blade, .blade:hover {
-          display: none;
-      }
-
+	.lightsaber,
+	.grip,
+	.blade,
+	.blade:hover {
+		display: none;
+	}
 }
 
-
 @media (max-width: 600px) {
-    .stats {
-        transform: scale(.9);
-        padding-bottom: 0px;
-    }
-    .card {
-        transform: scale(.8);
-    }
-
-    .faceup .facedown {
-        transform: scale(.8);
-    }
-
-    .card.flip {
-        transform: rotateY(180deg) scale(.8);
-    }
-
-      .winbox, .loserbox {
-        margin: 5px;
-    }
+	.stats {
+		transform: scale(.9);
+		padding-bottom: 0px;
+	}
+	.card {
+		transform: scale(.8);
+	}
+	.faceup .facedown {
+		transform: scale(.8);
+	}
+	.card.flip {
+		transform: rotateY(180deg) scale(.8);
+	}
+	.winbox,
+	.loserbox {
+		margin: 5px;
+	}
 }
 
 @media (max-width: 360px) {
-    .gamestats {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .stats {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    transform: scale(.7)
-    }
-    .card {
-        transform: scale(.7);
-    }
-
-     .faceup .facedown {
-         transform: scale(.7);
-     }
-
-    .card.flip {
-        transform: rotateY(180deg) scale(.7);
-    }
-
-    .winbox, .loserbox {
-        margin: 5px;
-    }
-
+	.gamestats {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.stats {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		transform: scale(.7)
+	}
+	.card {
+		transform: scale(.7);
+	}
+	.faceup .facedown {
+		transform: scale(.7);
+	}
+	.card.flip {
+		transform: rotateY(180deg) scale(.7);
+	}
+	.winbox,
+	.loserbox {
+		margin: 5px;
+	}
 }

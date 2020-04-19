@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"  rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <title>Star Wars Memory Game</title>
 </head>
+
 <body>
 
-  <div class="gamestats">
-            <div class="stats">
-                <div class="homebox">
-               <div class="home btn btn-dark" onclick="location.href = 'index.html'"><i class="fas fa-home"></i></div>
-                </div>
-                <div class="attemptsbox">
-                 <div class="numberattempts">0</div>
-                </div>
-                <div class="restartbox">
-                    <div class="restart btn btn-dark" onclick="restart();"><i class="fas fa-redo"></i></div>
-                </div>
+    <div class="gamestats">
+        <div class="stats">
+            <div class="homebox">
+                <div class="home btn btn-dark" onclick="location.href = 'index.html'"><i class="fas fa-home"></i></div>
             </div>
-</div>
-<div class="container">
+            <div class="attemptsbox">
+                <div class="numberattempts">0</div>
+            </div>
+            <div class="restartbox">
+                <div class="restart btn btn-dark" onclick="restart();"><i class="fas fa-redo"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row col-md-12 col-xl-12 mx-auto game">
             <div class="card col-3 col-md-3 col-xl-3" data-name="Lando">
                 <img class="faceup" src="assets/images/Lando.jpg" alt="Lando">
@@ -41,7 +43,7 @@
                 <img class="facedown" src="assets/images/starwarscard.jpg" alt="starwarslogo">
             </div>
             <div class="card col-3 col-md-3 col-xl-3" data-name="BB8">
-                <img class="faceup" src="assets/images/BB8.jpg" alt="BB8"> 
+                <img class="faceup" src="assets/images/BB8.jpg" alt="BB8">
                 <img class="facedown" src="assets/images/starwarscard.jpg" alt="starwarslogo">
             </div>
             <div class="card col-3 col-md-3 col-xl-3" data-name="C3PO">
@@ -92,30 +94,30 @@
                 <img class="faceup" src="assets/images/Rey.jpg" alt="Rey">
                 <img class="facedown" src="assets/images/starwarscard.jpg" alt="starwarslogo">
             </div>
-    </div>
-</div>
-
-  <div id="win" class="winbox winner">
-    <h2>YOU WIN!</h2>
-    <div class="winimage">
-    </div>
-    <h6><br>Strong in you the Force is...<br> </h6>
-    <div class="nextlevelbox">
-               <div class="nextlevel btn btn-dark" onclick="location.href = 'padawan.html'">Return to Padawan Training...<i class="fas fa-jedi"></i></div>
-    </div>
+        </div>
     </div>
 
+    <div id="win" class="winbox winner">
+        <h2>YOU WIN!</h2>
+        <div class="winimage">
+        </div>
+        <h6><br>Strong in you the Force is...<br> </h6>
+        <div class="nextlevelbox">
+            <div class="nextlevel btn btn-dark" onclick="location.href = 'padawan.html'">Return to Padawan Training...<i class="fas fa-jedi"></i></div>
+        </div>
+    </div>
 
     <div id="lose" class="loserbox loser">
-    <h2>YOU LOSE!</h2>
-    <div class="failimage">
-    </div>
-    <h6><br>Your arrogance clouds your judgement and that is why you fail...<br> Try Again...</h6>
-    <div class="nextlevelbox">
-               <div class="nextlevel btn btn-dark" onclick="location.href = 'jedimaster.html'">Try Again...<i class="fas fa-redo"></i></div>
-    </div>
+        <h2>YOU LOSE!</h2>
+        <div class="failimage">
+        </div>
+        <h6><br>Your arrogance clouds your judgement and that is why you fail...<br> Try Again...</h6>
+        <div class="nextlevelbox">
+            <div class="nextlevel btn btn-dark" onclick="location.href = 'jedimaster.html'">Try Again...<i class="fas fa-redo"></i></div>
+        </div>
     </div>
 
     <script src="assets/js/game.js"></script>
 </body>
+
 </html>
