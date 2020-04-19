@@ -30,19 +30,19 @@ Players also have the ability to restart a game or navigate home from any level 
 
 ## UserStories
 
-*Easily accessible buttons in the main menu to desired difficulty level.
-*Players have the ability to navigate through multiple levels.
-*Players can navigate through all screens with ease. 
-*Players will be able to click on a card that makes it rotate 180 degrees in a smooth 3d like movement.
-*The game will detect when two cards have been clicked and will not allow any more cards to be clicked until unmatched cards have been unflipped so the game can resume.
-*The game will detect when the player selects two unmatched cards and those cards will flip back over. 
-*The game will detect when the player has completed a match and have those cards will not unflip and remain visible. 
-*The game will count the amount of attempts made at matching cards, each attempt will equal two clicks. 
-*When all pairs have been matched the game will check the amount of attempts and display the players result - win or lose.
-*The modal will contain navigation buttons to either proceed to next levels or retry the game. 
-*If the player does not win a level they are not prompted to proceed but to retry that level only. 
-*If the player wins they are not prompted to retry that level but to proceed only. 
-*Game should be child friendly but should also be enjoyed by Star Wars fans of all age groups.
+* Easily accessible buttons in the main menu to desired difficulty level.
+* Players have the ability to navigate through multiple levels.
+* Players can navigate through all screens with ease. 
+* Players will be able to click on a card that makes it rotate 180 degrees in a smooth 3d like movement.
+* The game will detect when two cards have been clicked and will not allow any more cards to be clicked until unmatched cards have been unflipped so the game can resume.
+* The game will detect when the player selects two unmatched cards and those cards will flip back over. 
+* The game will detect when the player has completed a match and have those cards will not unflip and remain visible. 
+* The game will count the amount of attempts made at matching cards, each attempt will equal two clicks. 
+* When all pairs have been matched the game will check the amount of attempts and display the players result - win or lose.
+* The modal will contain navigation buttons to either proceed to next levels or retry the game. 
+* If the player does not win a level they are not prompted to proceed but to retry that level only. 
+* If the player wins they are not prompted to retry that level but to proceed only. 
+* Game should be child friendly but should also be enjoyed by Star Wars fans of all age groups.
 
 
 ## Wireframes
@@ -50,7 +50,7 @@ Players also have the ability to restart a game or navigate home from any level 
 All wireframes for this website were created using Balsamiq Mock up tool.
 
 1. Main Desktop Screen [here](libraries/wireframes/mainpagedesktop.JPG)
-2. Main Mobile Screen [here](libraries/wireframes/mainpage mobile.JPG)
+2. Main Mobile Screen [here](libraries/wireframes/mainpagemobile.JPG)
 3. Gameplay Desktop Screen [here](libraries/wireframes/gameplaymobile.JPG)
 4. Gameplay Mobile Screen [here](libraries/wireframes/gameplaydesktop.JPG)
 5. Win Game Desktop Screen [here](libraries/wireframes/gamewinmobile.JPG)
@@ -61,15 +61,18 @@ All wireframes for this website were created using Balsamiq Mock up tool.
 
 ## Features
 
-* Dark buttons with highlighted text on main screen.
-* Interactive well designed CSS Lightsaber on desktop version.
-* Smooth 180 degree flip transformations on click.
+* The main page contains dark buttons with highlighted yellow text (star wars themed) on main screen that indicate the three levels of difficulty available to the player.
+* The main page has an Interactive well designed CSS Lightsaber on desktop version.
+* The game page has 3 divs located at the top of the screen, home, number of attempts and restard.
+* The 3 difficulty levels have 8, 12 and 16 cards respectively. 
+* The game has smooth 180 degree card flip transformations on click.
+* Every two clicks updates the attempts counter box by +1. 
 * Smooth unflip transformations when unmatched cards are chosen.
 * Interactive gameplay.
 * Responsive design on all devices. 
-* Attempts counter for competitive players. 
+* Navigation buttons in the results modal box take you to next levels or restart any lost games.
 * Results modal with logic based on calculated number of attempts vs winning cutoff. 
-* Results modal with clips from star wars through Gifs. 
+* Results modal with clips from star wars presented through Gifs. 
 
 ## FutureFeatures
 
@@ -94,7 +97,7 @@ In the future I would like to add the following features;
 
 Test | Outcome
 ------------ | -------------
-W3C validation for index.html | Failed on <li> being inside div - had updated the divs to be list items and forgot to wrap in a <ul> tag - updated and Passed as a result.  
+W3C validation for index.html | Failed on list item being inside a div - had updated the divs to be list items to make my HTML more semantic and had forgotten to wrap in the list items in an unordered list tag - updated and Passed as a result.  
 W3C validation for padawan.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups. 
 W3C validation for jediknight.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
 W3C validation for jedimaster.html | Failed on "type=button" not required. Removed and Re-tested and Passed as a result. Also provided guidance to add ALT to images in case of failure so I added text backups.
@@ -138,21 +141,42 @@ Browser Test | Outcome
 
 
 ## Deployment
+[GitHub](https://github.com/) was used to develop the project, store code in repositories and maintain the version control of this project. 
+The live demo has been deployed using [GitHubPages](https://pages.github.com/).
 
-* to do. 
+The following steps were used to deploy the Star Wars Memory Game to GitHub Page:
+1. Log into GitHub
+2. Navigate to respositaries section and select **MilestoneProject2StarWarsMemoryGame**.
+3. On the top bar search for and click on **Settings** in the top right hand corner.
+4. Near the end of the page you will find the **Github Pages** section. 
+5. Click on the dropdown located in the source section and select **Master Branch** from the list. 
+6. The site has now been deployed on Github Pages.
+7. To obtain the live link to your deployed site navigate back through these steps to the **Github Pages** section and your link will be shown there.
+
 
 ## Technologies
-* [Javascript](https://www.javascript.com/)
+The project is built using HTML, CSS and Javascript as its main components.
+
+The following are the other Technologies used throughout the build process:
 * [JQuery](https://jquery.com)
+    - Used to simplify some elements of Javascript. 
 * [Bootstrap](https://www.bootstrapcdn.com/)
 * [FontAwesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css)
+    - Used for useful icons to provide more intuitive UI.
 * [GitHub](https://github.com/)
+    - Used to develop, store and share code and site is deployed on [GitHubPages](https://pages.github.com/).
 * [Balsamiq](https://balsamiq.com/)
+    - Used to create the original wireframes for the project.
 * [Photoshop](https://www.adobe.com/ie/products/photoshop.html)
+    - Used to crop and resize images used for cards.
 * [Dev Tools](https://www.google.com/chrome/)
+    - Used continuously when building game for CSS design and debugging any HTML & JS issues.
 * [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+    - Used to validate CSS code.
 * [HTML Validator](https://validator.w3.org/)
+    - Used to validate HTML code.
 * [Javascript Validator](https://jshint.com/)
+    - Used to validate Javascript code.
 
 
 ## ViewProject
