@@ -1,5 +1,3 @@
-/* GameFundamentalCode*/
-
 const cards = document.querySelectorAll('.card'); //select all class elements with card
 let numberAttempts = 0; // sets number of attempts to 0
 let hasFlippedCard = false; // all cards false 
@@ -78,7 +76,7 @@ function shuffle() { //shuffles cards based on the shufflenumber and puts them i
 
 
 function restart() { //restarts the game - tied to the restart and try again button, shuffles, removes flip and match classes, sets number attempts to 0, adds event listener, reshows the cards and hides the results modal
-    cards.forEach(card => {
+    cards.forEach(card => { // ****Future Bug fix - For some reason when I add the function shuffle() here it stops gameplay but when I duplicate the shuffle code it operates as it should. Will investigate further to avoid code duplication.  
     let randomPos = Math.floor(Math.random() * shufflenumber );
     card.style.order = randomPos;  
     card.classList.remove('flip', 'match'); 
